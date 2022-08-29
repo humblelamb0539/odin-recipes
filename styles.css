@@ -1,0 +1,52 @@
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+body {
+    background-color: #B891FE;
+    text-align: center;
+}
+
+ul {
+    line-height: 2em;
+}
+.box{
+    margin-top: 0cm;
+    padding-top: 0cm;
+    width: 610px;
+    position: relative;
+    display: inline-block; /* Make the width of box same as image */
+}
+.box .text {
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 5%;
+    right: 5%;
+    top: 27%; /* Adjust this value to move the positioned div up and down */
+    text-align: center;
+    width: 55%; /* Set the width of the positioned div */
+}
+h1 {
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+}
+a {
+    color: gold;
+}
+ul {
+    list-style: none; /* Remove default bullets */
+  }
+  
+  ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: whitesmoke; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+.center {
+    width: 10cm;
+}
